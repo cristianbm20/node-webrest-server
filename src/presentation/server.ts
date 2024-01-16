@@ -25,9 +25,7 @@ export class Server {
       res.sendFile(indexPath)
     })
 
-    const PORT = process.env.PORT ?? 3000
-
-    this.app.listen(PORT, () =>
-      console.log(`Server running on port ${PORT}`))
+    this.app.listen(this.port, () =>
+      console.log(`Server running on port ${this.port}`))
   }
 }

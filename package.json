@@ -7,7 +7,7 @@
     "dev": "ts-node ./src/app.ts",
     "dev:watch": "ts-node-dev --respawn ./src/app.ts",
     "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node ./dist/app.js"
+    "start": "node ./dist/app.js"
   },
   "keywords": [],
   "author": "Cristian Bermudez",
