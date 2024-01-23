@@ -4,7 +4,7 @@ import path from 'node:path'
 interface Options {
   port: number
   routes: Router
-  publicPath?: string
+  PublicPath?: string
 }
 
 export class Server {
@@ -14,9 +14,9 @@ export class Server {
   private readonly routes: Router
 
   constructor (options: Options) {
-    const { port, routes, publicPath = 'public' } = options
+    const { port, routes, PublicPath = 'public' } = options
     this.port = port
-    this.publicPath = publicPath
+    this.publicPath = PublicPath
     this.routes = routes
   }
 
