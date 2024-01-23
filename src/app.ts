@@ -5,7 +5,7 @@ import { Server } from './presentation/server'
 const main = async (): Promise<void> => {
   const server = new Server({
     port: envs.PORT,
-    publicPath: envs.PUBLIC_PATH,
+    PublicPath: envs.PUBLIC_PATH,
     routes: AppRoutes.routes
   })
 
