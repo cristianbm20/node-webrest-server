@@ -3,9 +3,9 @@ import { prisma } from '../../data/postgres'
 import { CreateTodoDto, UpdateTodoDto } from '../../domain/dtos'
 
 export class TodosController {
-  public getTodos = async (req: Request, res: Response): Promise<Response> => {
+  public getTodos = async (req: Request, res: Response): Promise<void> => {
     const todos = await prisma.todo.findMany()
-    return res.json(todos)
+    res.json(todos)
   }
 
   public getTodoById = async (req: Request, res: Response): Promise<Response> => {
