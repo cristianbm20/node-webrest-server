@@ -1,6 +1,7 @@
 export class CreateTodoDto {
   constructor (
-    public readonly text: string
+    public readonly text: string,
+    public readonly completedAt?: Date
   ) {}
 
   static create (props: { [key: string]: any }): [string?, CreateTodoDto?] {
